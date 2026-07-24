@@ -8,10 +8,10 @@ spec:
   containers:
     - name: nginx
       image: nginx
-  # tolerances:
-  #  - key: "hardware"
-  #    value: "gpu"
-  #    operator: "equal"
-  #    effect: "NoExecute"
+  tolerances:
+   - key: "hardware"
+     value: "gpu"
+     operator: "equal"
+     effect: "NoExecute"
   # nodeSelector:
   #   project: roboshop
