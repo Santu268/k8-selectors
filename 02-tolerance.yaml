@@ -8,7 +8,7 @@ spec:
   containers:
     - name: nginx
       image: nginx
-  tolerances:
+  tolerations:
   - key: "hardware"
     value: "gpu"
     operator: "equal"
