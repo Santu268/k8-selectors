@@ -9,9 +9,9 @@ spec:
     - name: nginx
       image: nginx
   tolerances:
-   - key: "hardware"
-     value: "gpu"
-     operator: "equal"
-     effect: "NoExecute"
+  - key: "hardware"
+    value: "gpu"
+    operator: "equal"
+    effect: "NoExecute"
   # nodeSelector:
   #   project: roboshop
