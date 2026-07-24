@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-tolerance
+  labels:
+    project: roboshop
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+  # tolerances:
+  #  - key: "hardware"
+  #    value: "gpu"
+  #    operator: "equal"
+  #    effect: "NoExecute"
+  # nodeSelector:
+  #   project: roboshop
